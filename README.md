@@ -20,7 +20,7 @@ Arduino/Grove
 https://github.com/Seeed-Studio/Grove_6Axis_Accelerometer_And_Compass/blob/master/examples/CompensatedCompass.ino
 
 
-###BMI160/323:
+### BMI160/323:
 
 https://github.com/boschsensortec/BMI160_driver
 
