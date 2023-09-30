@@ -82,4 +82,13 @@ Eine Sammlung von Links zu dem Thema
 - https://www.st.com/resource/en/design_tip/dt0058-computing-tilt-measurement-and-tiltcompensated-ecompass-stmicroelectronics.pdf
 - https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmm150-ds001.pdf
 
+## Kalmanfilter
+- https://www.cbcity.de/das-kalman-filter-einfach-erklaert-teil-1
+- https://www.cbcity.de/das-kalman-filter-einfach-erklaert-teil-2
+- https://www.cbcity.de/4d-kalman-filter-in-c
+  
+- https://www.halvorsen.blog/documents/automation/kalman_filter/LabVIEW%20Kalman%20Filter%20Examples.pdf
+
+## Rotationsmatrix
+- https://www.cbcity.de/tutorial-rotationsmatrix-und-quaternion-einfach-erklaert-in-din70000-zyx-konvention
 
