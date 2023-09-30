@@ -1117,7 +1117,7 @@
     (uuid fedf0311-c865-4eed-9046-2dccd526f248)
   )
 
-  (text "BMI160:\n0x76 --> SDO to GND\n0x77 --> SDO to VDDIO" (at 118.11 53.34 0)
+  (text "BME280:\n0x76 --> SDO to GND\n0x77 --> SDO to VDDIO" (at 118.11 53.34 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 292310d8-8441-43f7-b80b-3bd0161d6e66)
   )
@@ -1126,7 +1126,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4a79b335-769d-4ad3-a704-417609684539)
   )
-  (text "0x3A --> ACC\n0x3C --> MAG" (at 44.45 190.5 0)
+  (text "LSM303AGR:\n0x3A --> ACC\n0x3C --> MAG" (at 44.45 190.5 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid da0e5195-52d8-434a-942a-d32eadb55d30)
   )
