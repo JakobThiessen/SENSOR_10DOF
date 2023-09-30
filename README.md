@@ -64,5 +64,22 @@ Arduino/Grove
 - https://github.com/boschsensortec/BMI160_driver
 - https://github.com/boschsensortec/BMI323-Sensor-API
 
+## Calibration of Magnetometer with Acc-Sensor
+
+Application note: AN3192 Using LSM303DLH for a tilt compensated electronic compass
+
+Masterarbeit
+- https://reposit.haw-hamburg.de/bitstream/20.500.12738/8460/1/Masterarbeit_Tobias_Michaelsen.pdf
+
+Lib von ST
+- https://github.com/STMicroelectronics/x-cube-mems1
+
+Eine Sammlung von Links zu dem Thema
+- https://github.com/Seeed-Studio/Grove_6Axis_Accelerometer_And_Compass/blob/master/examples/CompensatedCompass.ino
+
+- https://www.nxp.com/docs/en/application-note/AN4248.pdf
+- https://www.nxp.com/docs/en/application-note/AN4249.pdf
+- https://www.st.com/resource/en/design_tip/dt0058-computing-tilt-measurement-and-tiltcompensated-ecompass-stmicroelectronics.pdf
+- https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmm150-ds001.pdf
 
 
