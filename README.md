@@ -16,6 +16,10 @@
 |-----------------------:|:-------------------------:|
 | ![image info](./Hardware/KiCad/TOP.png ) |  ![image info](./Hardware/KiCad/BOT.png )|
 
+<p float="left">
+  <img src="/Hardware/KiCad/dimension.png" width="400" />
+</p>
+
 # Software
 
 ## Driver
