@@ -22,6 +22,31 @@
 
 # Software
 
+**BMI160:**
+```diff
++ 0x68 --> SDO to GND (default)
+# 0x69 --> SDO to VDDIO
+```
+
+**BMI323:**
+```diff
++ 0x68 --> SDO to GND (default)
+# 0x69 --> SDO to VDDIO
+```
+
+**BME280:**
+```diff
++ 0x76 --> SDO to GND (default)
+# 0x77 --> SDO to VDDIO
+```
+
+
+**LSM303AGR:**
+```diff
++ 0x3A --> ACC (default)
++ 0x3C --> MAG (default)
+```
+
 ## Driver
 
 ### lsm303agr
