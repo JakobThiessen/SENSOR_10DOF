@@ -20,6 +20,11 @@
   <img src="/Hardware/KiCad/dimension.png" width="400" />
 </p>
 
+| Values                 | Reference                 |
+|-----------------------:|:-------------------------:|
+| ![image info](./Hardware/KiCad/placement_1.png ) |  ![image info](./Hardware/KiCad/placement_2.png )|
+
+
 # Software
 
 **BMI160:**
