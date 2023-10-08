@@ -20,6 +20,11 @@
   <img src="/Hardware/KiCad/dimension.png" width="400" />
 </p>
 
+| Values                 | Reference                 |
+|-----------------------:|:-------------------------:|
+| ![image info](./Hardware/KiCad/placement_1.png ) |  ![image info](./Hardware/KiCad/placement_2.png )|
+
+
 # Software
 
 **BMI160:**
@@ -64,5 +69,31 @@ Arduino/Grove
 - https://github.com/boschsensortec/BMI160_driver
 - https://github.com/boschsensortec/BMI323-Sensor-API
 
+## Calibration of Magnetometer with Acc-Sensor
 
+Application note: AN3192 Using LSM303DLH for a tilt compensated electronic compass
+
+Masterarbeit
+- https://reposit.haw-hamburg.de/bitstream/20.500.12738/8460/1/Masterarbeit_Tobias_Michaelsen.pdf
+
+Lib von ST
+- https://github.com/STMicroelectronics/x-cube-mems1
+
+Eine Sammlung von Links zu dem Thema
+- https://github.com/Seeed-Studio/Grove_6Axis_Accelerometer_And_Compass/blob/master/examples/CompensatedCompass.ino
+
+- https://www.nxp.com/docs/en/application-note/AN4248.pdf
+- https://www.nxp.com/docs/en/application-note/AN4249.pdf
+- https://www.st.com/resource/en/design_tip/dt0058-computing-tilt-measurement-and-tiltcompensated-ecompass-stmicroelectronics.pdf
+- https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmm150-ds001.pdf
+
+## Kalmanfilter
+- https://www.cbcity.de/das-kalman-filter-einfach-erklaert-teil-1
+- https://www.cbcity.de/das-kalman-filter-einfach-erklaert-teil-2
+- https://www.cbcity.de/4d-kalman-filter-in-c
+  
+- https://www.halvorsen.blog/documents/automation/kalman_filter/LabVIEW%20Kalman%20Filter%20Examples.pdf
+
+## Rotationsmatrix
+- https://www.cbcity.de/tutorial-rotationsmatrix-und-quaternion-einfach-erklaert-in-din70000-zyx-konvention
 
