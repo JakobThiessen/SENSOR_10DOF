@@ -63,6 +63,73 @@ Standard C platform-independent drivers for MEMS motion and environmental sensor
 Arduino/Grove
 - https://github.com/Seeed-Studio/Grove_6Axis_Accelerometer_And_Compass/blob/master/examples/CompensatedCompass.ino
 
+embedded/lsm303agr
+
+``` c
+/* USER CODE BEGIN PV */
+static struct lsm303agr_dev Sensor;
+
+/* USER CODE BEGIN 0 */
+int8_t i2c_1_read(uint8_t dev_addr, uint8_t reg_addr, uint8_t *data, uint16_t len)
+{
+	int8_t result;
+
+	result = HAL_I2C_Master_Transmit(&hi2c1, (uint16_t) dev_addr, &reg_addr, 1, 10);
+	result += HAL_I2C_Master_Receive(&hi2c1, (uint16_t) dev_addr, data, len, 10);
+	return result;
+}
+
+int8_t i2c_1_write(uint8_t dev_addr, uint8_t reg_addr, uint8_t *data, uint16_t len)
+{
+	int8_t result;
+	uint8_t buffer[128];
+
+	buffer[0] = reg_addr;
+	memcpy(&buffer[1], data, len);
+
+	result = HAL_I2C_Master_Transmit(&hi2c1, (uint16_t) dev_addr, buffer, len + 1, 100);
+	return result;
+}
+
+
+void main(void)
+{
+	/* Hardware init*/
+	
+	........
+	/*  */
+	Sensor.dev_addr_mag = LSM303AGR_MAG_I2C_ADDRESS;
+	Sensor.dev_addr_acc = LSM303AGR_ACC_I2C_ADDRESS;
+	Sensor.read = i2c_1_read;
+	Sensor.write = i2c_1_write;
+
+	struct lsm303agr_mag_data magData;
+	struct lsm303agr_acc_data accData;
+
+	int8_t res = lsm303agr_mag_init(LSM303AGR_CONTINUOUS, &Sensor);
+	res = lsm303agr_acc_init(LSM303AGR_ACC_NORMAL_MODE, &Sensor);
+
+	...
+
+	while (1)
+	{
+		int8_t rslt = 0;
+
+		rslt = lsm303agr_mag_read_data(&magData, &Sensor);
+		
+		uint8_t data_ready_status = 0;
+		lsm303agr_acc_get_DataReadyStatus(&data_ready_status, &Sensor);
+		
+		if (data_ready_status != 0)
+		{
+			lsm303agr_acc_read_data(&accData, &Sensor);
+			rslt += lsm303agr_temp_read_data(&temperature, &Sensor);
+		}
+	}
+}
+
+
+```
 
 ### BMI160/323:
 
